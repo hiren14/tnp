@@ -12,8 +12,8 @@ const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET!;
 
 export default defineConfig({
   basePath: "/studio",
-  name: 'AD_Content_Studio',
-  title: 'AD Content Studio',
+  name: 'TPO_BACKEND',
+  title: 'TNP BACKEND Studio',
   projectId,
   dataset,
   plugins: [
