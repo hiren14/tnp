@@ -16,16 +16,16 @@ interface Post extends Base {
 	description: string;
 	dinter:string;
     dlast:string;
-    vac:String;
+    vac:string;
     bond:Block[];
     inter:Block[];
-    quali:String;
-    sel:String;
-    elig:String;
-    package:String;
-    gurl:String;
-    loc:String;
-    companyname: String;
+    quali:string;
+    sel:string;
+    elig:string;
+    package:string;
+    gurl:string;
+    loc:string;
+    companyname: string;
     job: Block[];
 
 }
