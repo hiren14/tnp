@@ -22,7 +22,7 @@ interface Post extends Base {
     quali:string;
     sel:string;
     elig:string;
-    package:string;
+    package: Block[];
     gurl:string;
     loc:string;
     companyname: string;

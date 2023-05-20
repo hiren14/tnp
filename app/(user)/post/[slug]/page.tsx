@@ -141,9 +141,7 @@ async function Post({ params: { slug } }: Props) {
        </div>
        <h4 className="text-l mt-10 mb-3">
  Package:  </h4>
- <p className="text-l  inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-  {post.package}</p>
-      
+ <PortableText value={post.package} components={RichTextComponents} />
   <h4 className="text-l mt-10 mb-3">
 Vacancy:  </h4> <p className="text-l font-light text-gray-500 mb-2">
         {post.vac}
