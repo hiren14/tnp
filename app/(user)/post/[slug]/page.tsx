@@ -213,7 +213,10 @@ last date of registration
 <br />
 
 {/* g forms  */}
+<h2 className="text-l mt-10 mb-3">
+          Registration form   </h2>
 
+<iframe className="max-w-3xl mx-auto" src={post.gurl} width="100%" height="1000" >Loading…</iframe>
       </div>
       </div>
 
