@@ -6,7 +6,7 @@
 // import { RichTextComponents } from "../../../components/RichTextComponents";
 import TeamCard from '../../../components/teams/TeamCard';
 import teamstyle from '../../../components/teams/Team.module.css';
-import { menter } from '../../../lib/TeamData';
+import { student } from '../../../lib/TeamData';
 
 export default  function Placed() {
 
@@ -44,15 +44,17 @@ export default  function Placed() {
                 </div>
                 <h2 className={teamstyle.postHead}>Placed Student </h2>
         <div className={teamstyle.cardContainer}>
-          {menter.map((item, index) => {
+          {student.map((item, index) => {
             return (
               <TeamCard
                 key={`${String(index)}-team`}
-                name={item.name}
-                pos={item.pos}
-                imageSrc={item.picture}
-                lazyImageSrc={item.picture}
-                 url={item.url}            
+                name={item.student_Name}
+                pos={item.company_name}
+                imageSrc={item.img}
+                lazyImageSrc={item.img}
+                eroll ={item.enrollment_no}
+                pack ={item.package}
+                sem ={item.semester}            
                    />
             );
           })}
