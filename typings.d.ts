@@ -86,8 +86,19 @@ interface Placed {
 	  companyname:string;
 	  slug: Slug;
 		simg: IImage;
-		sdatas?: ISdata[];
-		splaced?: ISPlaced[];
+		sdatas: ISdata[];
+		splaced: ISPlaced[];
+		name: string;
+		position:string;
+		linkedln:string;
+		companyname:string;
+		year:string;
+		package:string;
+		simg: IImage;
+	
+		slug: {
+			current: string;
+		  };
 		
    }
    interface ISPlaced {
@@ -99,9 +110,7 @@ interface Placed {
     package:string;
     simg: IImage;
 
-    slug: {
-        current: string;
-      };
+  
 }
 interface ISdata {
     name: string;

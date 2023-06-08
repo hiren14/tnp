@@ -28,7 +28,7 @@ export default defineType({
           defineField({ name: "sdatas",
           title: "Student Data",
           type: "array",
-          of: [{ type: "sdata" }],
+          of: [{ type: "sdatas" }],
         }),
     ],
     
