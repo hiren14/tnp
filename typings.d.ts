@@ -81,3 +81,38 @@ interface Title {
 	_type: "string";
 	current: string;
 }
+interface Placed {
+	_id: string;
+	  companyname:string;
+	  slug: Slug;
+		simg: IImage;
+		sdatas?: ISdata[];
+		splaced?: ISPlaced[];
+		
+   }
+   interface ISPlaced {
+    name: string;
+    position:string;
+    linkedln:string;
+    companyname:string;
+    year:string;
+    package:string;
+    simg: IImage;
+
+    slug: {
+        current: string;
+      };
+}
+interface ISdata {
+    name: string;
+    position:string;
+    linkedln:string;
+    companyname:string;
+    year:string;
+    package:string;
+    simg: IImage;
+
+    slug: {
+        current: string;
+      };
+}
