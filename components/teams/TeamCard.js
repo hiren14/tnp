@@ -9,7 +9,7 @@ const ICON_SIZE = 28;
 function TeamCard({name, pos, imageSrc, lazyImageSrc,pack,sem,eroll }) {
   return (
     <div className={Style.card}>
-      <div className="z-10 w-full text-center h-2/3 mb-18 mt-4 overflow-hidden rounded-lg">
+      <div className="z-10 w-full text-center h-2/3 mb-18 mt-4 text-black dark:text-white overflow-hidden rounded-lg">
         <Image
           className="z-10 rounded-lg object-cover object-top"
           src={imageSrc}
@@ -22,7 +22,7 @@ function TeamCard({name, pos, imageSrc, lazyImageSrc,pack,sem,eroll }) {
         
         />
       </div>
-      <div className="z-10 text-center my-5">
+      <div className="z-10 text-center my-5  text-black dark:text-white">
       Name  <p className="text-xl">{name}</p>
       Company palced   <p className="text-xl">{pos}</p>
     Package    <p className="text-xl">{pack}</p>

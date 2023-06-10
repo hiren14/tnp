@@ -4,8 +4,8 @@
   background: rgb(0, 204, 255);
   background: linear-gradient(
     45deg,
-    rgba(0, 204, 255, 0.44861694677871145) 0%,
-    rgba(152, 232, 252, 0.4) 100%
+    #00ccff72 0%,
+    #98e8fc66 100%
   );
   transition: all 300ms ease-in-out;
 }

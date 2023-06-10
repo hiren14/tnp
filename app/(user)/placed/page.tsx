@@ -39,11 +39,11 @@ export default  function Placed() {
         ></span>
       </a>
 
-      <div className="w-64">
+      <div className="w-64  text-black dark:text-white">
                  
                 </div>
                 <h2 className={teamstyle.postHead}>Placed Student </h2>
-        <div className={teamstyle.cardContainer}>
+        <div className={teamstyle.cardContainer}  >
           {student.map((item, index) => {
             return (
               <TeamCard

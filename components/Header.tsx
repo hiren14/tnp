@@ -26,6 +26,14 @@ const Header = () => {
         >
           Home
         </Link>
+        <Link
+          href="/placed"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-2 py-3 text-sm md:text-base bg-[#8F00FF] text-[#FFF] hover:bg-[#483248] transition-all duration-[350ms] ease-out flex items-center rounded-lg text-center"
+        >
+          Placed Student
+        </Link>
         <DarkModeButton />
       </div>
     </header>
