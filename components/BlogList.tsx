@@ -2,6 +2,8 @@
 import { useState } from "react";
 import ClientSideRoute from "./ClientSideRoute";
 import PostCard from "./PostCard";
+import    About from '../app/(user)/about';
+import Team from '../components/Team';
 
 type Props = {
   posts: Post[];
@@ -15,8 +17,23 @@ const BlogList = ({ posts }: Props) => {
   };
 
   return (
-    <div className="relative z-0">
+
+<div className="relative z-0">
+<About />
+<br />
+<h1 data-text="drive" className="text-center text-7xl relative overflow-hidden pb-8 before:content-[attr(data-text)attr(data-text)] before:underline before:underline-offset-8 before:decoration-wavy before:decoration-sky-400 before:absolute before:whitespace-nowrap before:text-transparent hover:before:animate-wave">
+
+<p>
+  here placedment charts
+</p>
+</h1>
       <hr className="border-[#8F00FF] mb-10" />
+
+      <h1 data-text="drive" className="text-center text-7xl relative overflow-hidden pb-8 before:content-[attr(data-text)attr(data-text)] before:underline before:underline-offset-8 before:decoration-wavy before:decoration-sky-400 before:absolute before:whitespace-nowrap before:text-transparent hover:before:animate-wave">
+    Drives
+  </h1>
+  <br />
+
       <div className="grid grid-cols-1 md:grid-cols-2 px-10 gap-10 gap-y-16 pb-24">
         {posts.slice(0, loadMore)?.map((item) => (
           <>
@@ -55,6 +72,8 @@ const BlogList = ({ posts }: Props) => {
       <div className="flex justify-center mt-5">
         Showing {loadMore} of {posts?.length} articles
       </div>
+
+<Team />
     </div>
   );
 };

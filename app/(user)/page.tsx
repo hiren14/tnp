@@ -18,6 +18,7 @@ export const revalidate = 60; // revalidate this page every 60 seconds
 export default async function HomePage() {
   if (previewData()) {
     return (
+     
       <PreviewSuspense
         fallback={
           <div role="status">
@@ -29,10 +30,15 @@ export default async function HomePage() {
       >
         <PreviewBlogList query={query} />
       </PreviewSuspense>
+      
     );
   }
 
   const posts = await client.fetch(query);
-
+// DRIVE
   return <BlogList posts={posts} />;
+  
+  
+
+  
 }
