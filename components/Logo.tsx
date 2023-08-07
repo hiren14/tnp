@@ -12,7 +12,6 @@ const Logo = (props: any) => {
         src="/profile-pic.png"
         alt="logo"
       />
-      <>{renderDefault(props)}</>
     </div>
   );
 };
