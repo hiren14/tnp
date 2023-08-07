@@ -41,7 +41,7 @@ async function Post({ params: { slug } }: Props) {
   const post: Post = await client.fetch(query, { slug });
 
   return (
-    <article className="px-10 pb-28">
+    <article className="px-10 pb-28  text-black dark:text-white">
       <a href="/" className="relative inline-block text-lg group mb-10 mt-10">
         <span className="relative z-10 block px-5 py-3 overflow-hidden font-medium leading-tight text-gray-800 transition-colors duration-300 ease-out border-2 border-gray-900 rounded-lg group-hover:text-white ">
           <span className="absolute inset-0 w-full h-full px-5 py-3 rounded-lg bg-gray-50 dark:bg-white"></span>
@@ -124,22 +124,22 @@ async function Post({ params: { slug } }: Props) {
         </div>
       </section>
   
-      <div className="h-full mx-auto  text-white justify-items-center text-center">
-      <div className="container my-24 px-6 py-6 mx-auto shadow-lg rounded-lg p-5 text-white">
+      <div className="h-full mx-auto  text-black dark:text-white justify-items-center text-center">
+      <div className="container my-24 px-6 py-6 mx-auto shadow-lg rounded-lg p-5  text-black dark:text-white">
               
-<h1 className="text-3xl mt-10 mb-3">Company Name:{"  "}{post.companyname}</h1>
+<h1 className="text-3xl mt-10 mb-3  text-black dark:text-white">Company Name:{"  "}{post.companyname}</h1>
 {/* <h2 className="text-xl font-light mb-2">
         {post.description}
         </h2> */}
         {/* job post  */}
 
         <div className="mt-10 ">
-        <h2 className="text-3xl mt-10 mb-3 ">   Job Post : </h2>
+        <h2 className="text-3xl mt-10 mb-3  text-black dark:text-white ">   Job Post : </h2>
         
         <PortableText value={post.job} components={RichTextComponents} />
      
        </div>
-       <h4 className="text-l mt-10 mb-3">
+       <h4 className="text-l mt-10 mb-3   text-black dark:text-white">
  Package:  </h4>
  <PortableText value={post.package} components={RichTextComponents} />
   <h4 className="text-l mt-10 mb-3">
@@ -148,7 +148,7 @@ Vacancy:  </h4> <p className="text-l font-light text-gray-500 mb-2">
  </p>      
 {/* job location */}
 
-<h4 className="text-l mt-10 mb-3">
+<h4 className="text-l mt-10 mb-3  text-black dark:text-white">
 Job Location:</h4>   <p className="text-l font-light text-gray-500 mb-2">
       {post.loc}
  </p>       
@@ -211,7 +211,7 @@ last date of registration
 <br />
 
 {/* g forms  */}
-<h2 className="text-l mt-10 mb-3">
+<h2 className="text-l mt-10 mb-3  text-black dark:text-white">
           Registration form   </h2>
 
 <iframe className="max-w-3xl mx-auto" src={post.gurl} width="100%" height="1000" >Loading…</iframe>

@@ -22,10 +22,10 @@ function TeamCard({name, pos, imageSrc, lazyImageSrc,pack,sem,eroll }) {
         
         />
       </div>
-      <div className="z-10 text-center my-5  text-black dark:text-white">
-      Name  <p className="text-xl">{name}</p>
-      Company palced   <p className="text-xl">{pos}</p>
-    Package    <p className="text-xl">{pack}</p>
+      <div className="z-10 text-center my-5   text-black dark:text-white">
+      Name  <p className="text-xl  text-black dark:text-white">{name}</p>
+      Company palced   <p className="text-xl  text-black dark:text-white">{pos}</p>
+    Package    <p className="text-xl  text-black dark:text-white">{pack}</p>
         
       </div>
       {/* <div className={Style.socials}>

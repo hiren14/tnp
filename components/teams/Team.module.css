@@ -37,7 +37,9 @@
   content: '';
   inset: 4px;
   background-color: #000;
-}
+    color: white;
+
+  }
 
 .socials {
   @apply flex justify-around items-center w-full z-10 mb-2;

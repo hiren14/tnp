@@ -11,7 +11,7 @@ import { student } from '../../../lib/TeamData';
 export default  function Placed() {
 
   return (
-    <article className="px-10 pb-28">
+    <article className="px-10 pb-28  text-black dark:text-white">
       <a href="/" className="relative inline-block text-lg group mb-10 mt-10">
         <span className="relative z-10 block px-5 py-3 overflow-hidden font-medium leading-tight text-gray-800 transition-colors duration-300 ease-out border-2 border-gray-900 rounded-lg group-hover:text-white ">
           <span className="absolute inset-0 w-full h-full px-5 py-3 rounded-lg bg-gray-50 dark:bg-white"></span>
