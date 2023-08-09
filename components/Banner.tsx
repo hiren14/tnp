@@ -25,7 +25,7 @@ const Banner = () => {
           {" "}
           Placement Drive{" "}
         </span>{" "}
-        for athlete training, development and nutrition.
+        for Gec Patan Student.
       </p>
     </div>
   );
