@@ -1,7 +1,9 @@
 const Banner = () => {
   return (
+   
+   
     <div
-      className="flex flex-col justify-between font-bold px-10 py-5 mb-10
+      className="flex flex-col justify-between font-bold px-20 py-20 mb-15
           lg:flex-row lg:space-x-5"
     >
       <div>

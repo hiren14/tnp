@@ -13,9 +13,16 @@ function NavBar() {
           <div>
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
               {/* LOGO */}
-              <Link href="/">
-                <h2 className="text-2xl text-cyan-600 font-bold ">LOGO</h2>
-              </Link>
+              
+        <Link href="/">
+          <Image
+            className="rounded-full"
+            src="/profile-pic.png"
+            width={50}
+            height={50}
+            alt="logo"
+          />
+        </Link>
               {/* HAMBURGER BUTTON FOR MOBILE */}
               <div className="md:hidden">
                 <button

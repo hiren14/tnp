@@ -3,7 +3,7 @@
 import { usePathname } from "next/navigation";
 import Banner from "../../components/Banner";
 import Footer from "../../components/Footer";
-import Header from "../../components/Header";
+// import Header from "../../components/Header";
 import ScrollToTop from "../../components/ScrollToTop";
 
 import Providers from "../../components/Providers";
@@ -23,7 +23,7 @@ export default function RootLayout({
       <body className="max-w-7xl mx-auto bg-[#F8F8F8] dark:bg-[#222] ">
         <Providers>
          
-          <Header />
+          {/* <Header /> */}
           <NavBar />
           <ScrollToTop />
           {hideBanner && <Banner />}
