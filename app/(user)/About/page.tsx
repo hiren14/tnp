@@ -6,7 +6,7 @@
 // import { RichTextComponents } from "../../../components/RichTextComponents";
 // import TeamCard from '../../../components/teams/TeamCard';
 // import teamstyle from '../../../components/teams/Team.module.css';
-// import { student } from '../../../lib/TeamData';
+import Team  from '../../../components/Team';
 
 export default  function About() {
 
@@ -90,25 +90,8 @@ Overall, the T&P department acts as a bridge between the academic environment an
 
 <br />
 <br />
-<h1 className="relative cursor-pointer group center">
-  Your Heading
-  <div className="absolute left-0 w-md h-1 bg-blue-500 group-hover:w-full transition-all duration-300 ease-in-out"></div>
-</h1>
+<Team />
 
-
-<div className="max-w-sm rounded overflow-hidden shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
-  <div className="px-20 py-4">
-    <div className="font-bold text-xl mb-2">Prof. HARESH CHANDE</div>
-   
-  </div>
-  <div className="px-2 py-4">
-    <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
-      <a href="mailto:" ></a>
-    </span>
-    <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#Tag2</span>
-   
-  </div>
-</div>      
      </article>
   );
 }

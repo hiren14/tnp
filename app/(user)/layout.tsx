@@ -9,6 +9,7 @@ import ScrollToTop from "../../components/ScrollToTop";
 import Providers from "../../components/Providers";
 
 import "../../styles/globals.css";
+import NavBar from "../../components/Navbar";
 
 export default function RootLayout({
   children,
@@ -21,7 +22,9 @@ export default function RootLayout({
     <html>
       <body className="max-w-7xl mx-auto bg-[#F8F8F8] dark:bg-[#222] ">
         <Providers>
+         
           <Header />
+          <NavBar />
           <ScrollToTop />
           {hideBanner && <Banner />}
           {children}

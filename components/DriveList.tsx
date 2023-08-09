@@ -2,14 +2,12 @@
 import { useState } from "react";
 import ClientSideRoute from "./ClientSideRoute";
 import PostCard from "./PostCard";
-import    About from '../app/(user)/about';
-import Team from '../components/Team';
 
 type Props = {
   posts: Post[];
 };
 
-const BlogList = ({ posts }: Props) => {
+const DriveList = ({ posts }: Props) => {
   const articlesShown = 4;
   const [loadMore, setLoadMore] = useState(articlesShown);
   const showMoreArticles = () => {
@@ -19,15 +17,7 @@ const BlogList = ({ posts }: Props) => {
   return (
 
 <div className="relative z-0">
-<About />
 <br />
-<h1 data-text="drive" className="text-center text-7xl relative overflow-hidden pb-8 before:content-[attr(data-text)attr(data-text)] before:underline before:underline-offset-8 before:decoration-wavy before:decoration-sky-400 before:absolute before:whitespace-nowrap before:text-transparent hover:before:animate-wave">
-
-<p>
-  here placedment charts
-</p>
-</h1>
-      <hr className="border-[#8F00FF] mb-10" />
 
       <h1 data-text="drive" className="text-center text-7xl relative overflow-hidden pb-8 before:content-[attr(data-text)attr(data-text)] before:underline before:underline-offset-8 before:decoration-wavy before:decoration-sky-400 before:absolute before:whitespace-nowrap before:text-transparent hover:before:animate-wave">
     Drives
@@ -72,10 +62,9 @@ const BlogList = ({ posts }: Props) => {
       <div className="flex justify-center mt-5">
         Showing {loadMore} of {posts?.length} articles
       </div>
-      <Team />
 
     </div>
   );
 };
 
-export default BlogList;
+export default DriveList;

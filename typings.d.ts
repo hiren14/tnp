@@ -81,13 +81,12 @@ interface Title {
 	_type: "string";
 	current: string;
 }
-interface Placed {
+interface Placed extends Base {
 	_id: string;
 	  companyname:string;
 	  slug: Slug;
 		simg: IImage;
 		sdatas: ISdata[];
-		splaced: ISPlaced[];
 		name: string;
 		position:string;
 		linkedln:string;
@@ -101,17 +100,7 @@ interface Placed {
 		  };
 		
    }
-   interface ISPlaced {
-    name: string;
-    position:string;
-    linkedln:string;
-    companyname:string;
-    year:string;
-    package:string;
-    simg: IImage;
 
-  
-}
 interface ISdata {
     name: string;
     position:string;

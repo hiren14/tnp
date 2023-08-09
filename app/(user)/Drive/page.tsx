@@ -1,9 +1,9 @@
 import { previewData } from "next/headers";
 import { groq } from "next-sanity";
-import { client } from "../../lib/sanity.client";
-import PreviewSuspense from "../../components/PreviewSuspense";
-import BlogList from "../../components/BlogList";
-import PreviewBlogList from "../../components/PreviewBlogList";
+import { client } from "../../../lib/sanity.client";
+import PreviewSuspense from "../../../components/PreviewSuspense";
+import DriveList from "../../../components/DriveList";
+import PreviewBlogList from "../../../components/PreviewBlogList";
 
 const query = groq`
 	*[_type == "post"] {
@@ -15,7 +15,7 @@ const query = groq`
 
 export const revalidate = 60; // revalidate this page every 60 seconds
 
-export default async function HomePage() {
+export default async function Drive() {
   
   // <About />
   if (previewData()) {
@@ -38,7 +38,7 @@ export default async function HomePage() {
 
   const posts = await client.fetch(query);
 // DRIVE
-  return <BlogList posts={posts} />;
+  return <DriveList posts={posts} />;
   
   
 

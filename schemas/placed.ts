@@ -10,15 +10,16 @@ export default defineType({
             title: "CompanyName",
             type: "string",
           }),
-          defineField({
-            name: "slug",
-            title: "Slug",
-            type: "slug",
-            options: {
-              source: "companyname",
-              maxLength: 96,
-            },
-          }),
+          
+      defineField({
+        name: "slug",
+        title: "Slug",
+        type: "slug",
+        options: {
+          source: "companyname",
+          maxLength: 96,
+        },
+      }),
           defineField({ name: "cimg",
           title: "Company image",
           type: "image",
