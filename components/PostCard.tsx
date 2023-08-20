@@ -30,11 +30,7 @@ const PostCard = ({ post }: Props) => {
           </div>
 
           <div className="flex flex-col md:flex-row gap-y-2 md:gap-x-2 items-center">
-            {post.categories.map((category) => (
-              <div className="bg-[#8F00FF] text-center text-white px-3 py-1 rounded-lg text-sm font-semibold]">
-                <p>{category.title}</p>
-              </div>
-            ))}
+          
           </div>
         </div>
       </div>
